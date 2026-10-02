@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- viewport-fit=cover lets the app use the full phone screen -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#14201f">
+  <title>Workout Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- script.js draws every screen into #app -->
+  <main id="app"></main>
+
+  <!-- Bottom navigation (hidden during a workout) -->
+  <nav id="nav">
+    <button data-a="tab" data-t="today"><span>🏠</span>Today</button>
+    <button data-a="tab" data-t="plans"><span>📋</span>Plans</button>
+    <button data-a="tab" data-t="calendar"><span>📅</span>History</button>
+    <button data-a="tab" data-t="progress"><span>📈</span>Progress</button>
+    <button data-a="tab" data-t="more"><span>⚙️</span>More</button>
+  </nav>
+
+  <!-- Pop-up sheet used for all add/edit forms -->
+  <div id="modal" hidden></div>
+
+  <!-- Hidden file picker used by "Import Data" -->
+  <input type="file" id="file" accept=".json,application/json" hidden>
+
+  <script src="script.js"></script>
+</body>
+</html>
