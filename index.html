@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#070b14">
+<title>Quest Log</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- All screens are drawn into #app by script.js -->
+<main id="app"><p class="dim center" style="padding:40px">Loading...</p></main>
+
+<!-- Fixed bottom navigation -->
+<nav id="nav">
+  <button data-act="tab" data-id="home" class="on">HOME</button>
+  <button data-act="tab" data-id="workouts">WORKOUTS</button>
+  <button data-act="tab" data-id="progress">PROGRESS</button>
+  <button data-act="tab" data-id="more">MORE</button>
+</nav>
+
+<div id="toast"></div>
+<input type="file" id="file" accept="application/json,.json" hidden>
+<script src="script.js"></script>
+</body>
+</html>
